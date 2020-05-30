@@ -1,0 +1,7 @@
+/home/ciri/eclipse-workspace_Oxygen/Artist-api/src/main/java/com/brain/software/config/JerseyConfig.java
+/home/ciri/eclipse-workspace_Oxygen/Artist-api/src/main/java/com/brain/software/ArtistApiApplication.java
+/home/ciri/eclipse-workspace_Oxygen/Artist-api/src/main/java/com/brain/software/repository/ArtistRepository.java
+/home/ciri/eclipse-workspace_Oxygen/Artist-api/src/main/java/com/brain/software/resource/ArtistResource.java
+/home/ciri/eclipse-workspace_Oxygen/Artist-api/src/main/java/com/brain/software/service/ArtistService.java
+/home/ciri/eclipse-workspace_Oxygen/Artist-api/src/main/java/com/brain/software/model/Artist.java
+/home/ciri/eclipse-workspace_Oxygen/Artist-api/src/main/java/com/brain/software/exception/RecordNotFoundException.java
