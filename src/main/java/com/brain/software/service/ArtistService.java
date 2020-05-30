@@ -21,10 +21,9 @@ public class ArtistService {
     public Artist createOrUpdateArtist(Artist entity) {
     	
     	
-    	
-    	Optional<Artist> artist = repository.findById(entity.getAlbumId());
-        
-        if(artist.isPresent()) 
+       if(entity.getArtistId()!=null) {
+    	Optional<Artist> artist = repository.findById(entity.getArtistId());
+       if(artist.isPresent()) 
         {
         	Artist newEntity = artist.get();
             newEntity.setGenres(entity.getGenres());
@@ -34,11 +33,11 @@ public class ArtistService {
             newEntity = repository.save(newEntity);
              
             return newEntity;
-        } else {
+        } 
+       }else {
             entity = repository.save(entity);
-             
-            return entity;
         }
+	return entity;
     }
     
    public Artist findByArtistId(Long artistId,Artist entity) throws RecordNotFoundException {

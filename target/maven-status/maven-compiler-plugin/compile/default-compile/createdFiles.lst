@@ -3,5 +3,6 @@ com/brain/software/exception/RecordNotFoundException.class
 com/brain/software/service/ArtistService.class
 com/brain/software/ArtistApiApplication.class
 com/brain/software/config/JerseyConfig.class
+com/brain/software/model/Albumb.class
 com/brain/software/resource/ArtistResource.class
 com/brain/software/model/Artist.class

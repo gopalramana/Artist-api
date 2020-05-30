@@ -7,14 +7,13 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import com.brain.software.exception.RecordNotFoundException;
 import com.brain.software.model.Artist;
@@ -48,10 +47,10 @@ public class ArtistResource {
 	
 	
 	@PUT
-	@Path("{artist}/{id}")
+	@Path("/{artistid}")
 	@Consumes("application/json")
     @Produces("application/json")
-	public ResponseEntity<Artist> updateArtist(@PathVariable long id,@RequestBody Artist artist) throws RecordNotFoundException {
+	public ResponseEntity<Artist> updateArtist(@PathParam(value = "artistid") long id,Artist artist) throws RecordNotFoundException {
 
 		Artist artistNew = artistService.findByArtistId(Long.valueOf(id),artist);
 		return new ResponseEntity<Artist>(artistNew, new HttpHeaders(), HttpStatus.OK);

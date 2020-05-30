@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.brain.software.ArtistApiApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 39.023 s - in com.brain.software.ArtistApiApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.46 s - in com.brain.software.ArtistApiApplicationTests
